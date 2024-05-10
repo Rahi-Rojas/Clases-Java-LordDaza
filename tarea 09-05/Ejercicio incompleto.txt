@@ -1,0 +1,68 @@
+import java.util.Scanner;
+/*Crear un programa que me permita registrar las notas de 10 alumnos, hallar el promedio
+ * de las notas de 15 para abajo, luego de 16 para arriba si no hay notas ya sea el caso de 15
+ * para abajo o de 16 para arriba mostrarme un mensaje no hay notas menores a quince o mayores
+ * a 16 seguido esto muestrame las notas ordenadas de menor a mayor y al final permiteme buscar
+ * una nota su posicion de esta misma en el arreglo para ello se hara la implementacion
+ * de Do While*/
+/*Menu. op1 = ingresar notas, op2 = ver si hay notas mayores a 16 o menores a 15
+ * op3 = promedio de las notas de >16 y <15, op=4 mostrar ordenandamente las notas de menor
+ * a mayor, op5= salir*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int[] notas = new int[5];
+        int sumaMayores = 0;
+        int sumaMenores = 0;
+        int notasMayores = 0;
+        int notasMenores = 0;
+        int opcion = 0;
+
+        do {
+            for (int i = 0; i < notas.length; i++) {
+                System.out.println("...:::Menu:::...");
+                System.out.println("1. Ingresar Notas");
+                System.out.println("2. Ver notas > 16 y < 15");
+                System.out.println("3.Promedio de las notas de > 16 y < 15");
+                System.out.println("4.Ordenar notas de Menor a Mayor");
+                System.out.println("5.Salir");
+                System.out.println("Ingresa tu Opcion: ");
+                opcion =entrada.nextInt();
+                //Op 1:
+                //Guardar datos
+                while (opcion != 4) {
+                    if (opcion == 1) {
+                        for (int j = 0; j < notas.length; j++) {
+                            System.out.println("Ingrese la Nota: ");
+                            notas[j] = entrada.nextInt();
+                        }
+                    if (opcion == 2) {
+                            for (int k = 0; k < notas.length; k++) {
+                                if (notas[k] >= 16 && notas[k] <= 20) {
+                                    notasMayores++;
+                                    sumaMayores += notas[k];
+                                } else if (notas[k] <= 15 && notas[k] >= 0) {
+                                    notasMenores++;
+                                    sumaMenores += notas[k];
+                                }
+                            }
+                            System.out.println("Notas Mayores o iguales a 16 son un total de: " + notasMayores);
+                            System.out.println("Notas Menores o iguales a 15 son un total de: " + notasMenores);
+                            System.out.println("...:::Menu:::...");
+                            System.out.println("1. Ingresar Notas");
+                            System.out.println("2. Ver notas > 16 y < 15");
+                            System.out.println("3.Promedio de las notas de > 16 y < 15");
+                            System.out.println("4.Ordenar notas de Menor a Mayor");
+                            System.out.println("5.Salir");
+                            System.out.println("Ingresa tu Opcion: ");
+                            opcion = entrada.nextInt();
+                        }
+
+
+                    }
+                }
+            }
+        }while (opcion == 4) ;
+        }
+    }

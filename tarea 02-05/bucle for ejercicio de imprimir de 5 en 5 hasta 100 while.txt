@@ -1,0 +1,14 @@
+import java.util.Scanner;
+/*Mostrar todos los numeros del 1 al 100, pero saltandose de 5 en 5*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int i = 0;
+
+        while (i <=100) {
+            System.out.println(i);
+            i+=5;
+        }
+    }
+}

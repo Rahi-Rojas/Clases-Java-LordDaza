@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+/*Crear una tabla de multiplicar pero preguntar a usuario de que numero desea hallar su tabla de multiplicar.
+* debe ser del 1 hasta 12*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int inicio = 1; //Iterador
+        int ultimo = 10;
+
+        while (inicio <= ultimo && acierto == false) {
+            if (inicio % 2 ==0) {
+                System.out.println(inicio);
+                acierto = true;
+            }
+            inicio++;
+        }
+    }
+}

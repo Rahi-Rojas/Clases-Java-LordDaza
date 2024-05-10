@@ -1,0 +1,52 @@
+import java.util.Scanner;
+/*Mostrar todos los numeros del 1 al 100, pero saltandose de 5 en 5*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int op;
+        int vidas=1;
+        int puntos =0;
+        
+ 
+        do {
+            int auxiliar = 0;    
+            
+            System.out.println("...:::Menú:::...");
+            System.out.println("1. Rojo🟥");
+            System.out.println("2. Verde🟩");
+            System.out.println("3. Empate🟦");
+            System.out.println("Ingresa tu opción🥵: ");
+            op= entrada.nextInt();
+             
+            
+            while (vidas <= 5) {
+                int aleatorio = (int) (Math.random()*3)+1;
+                
+                if (op == aleatorio) {
+                    System.out.println("Ganaste 10 puntos!");
+                    System.out.println("...:::Menú:::...");
+                    System.out.println("1. Rojo🟥");
+                    System.out.println("2. Verde🟩");
+                    System.out.println("3. Empate🟦");
+                    System.out.println("Ingresa tu opción🥵: ");
+                    op= entrada.nextInt();
+                    puntos += 10;
+                    vidas++;
+                }
+                else {
+                    System.out.println("Respuesta equivocada!");
+                    System.out.println("La respuesta correcta era: "+aleatorio+" 🥑");
+                    System.out.println("...:::Menú:::...");
+                    System.out.println("1. Rojo🟥");
+                    System.out.println("2. Verde🟩");
+                    System.out.println("3. Empate🟦");
+                    System.out.println("Ingresa tu opción🥵: ");
+                    op= entrada.nextInt();
+                    vidas++;
+                }
+            }
+            System.out.println("Ganaste un total de: "+puntos+" puntos🥵");
+        }while(vidas <=5);
+    }
+}

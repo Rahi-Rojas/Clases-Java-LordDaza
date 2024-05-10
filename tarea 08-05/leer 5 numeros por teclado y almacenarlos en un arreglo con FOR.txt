@@ -1,0 +1,40 @@
+/*/*Ejercicio Arreglos: Leer 5 números por teclado, almacenarlos en un arreglo y a
+continuación realizar la media de los números positivos, la media de los negativos y
+ conteo el número de ceros. */*/
+
+Scanner entrada = new Scanner(System.in);
+        int [] numeros;
+        int cantidadNumero;
+        int conteoNegativos = 0;
+        int sumaPositivos = 0;
+        int sumaNegativos = 0;
+        int conteopositivos = 0;
+        int conteoCeros = 0;
+        System.out.println("Cuantos numeros desea ingresar: ");
+        cantidadNumero = entrada.nextInt();
+        numeros = new int[cantidadNumero];
+
+        //Almcenar numeros
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print("Ingrese el numero: ");
+            numeros[i] = entrada.nextInt();
+        }
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] >= 1){
+                sumaPositivos += numeros[i];
+                conteopositivos++;//numero de datos
+            }
+            else if(numeros[i] <= -1){
+                sumaNegativos += numeros[i];
+                conteoNegativos++;
+            }
+            else {
+                conteoCeros++;
+            }
+        }
+
+        System.out.println("Conteo positivos: " + conteopositivos);
+        System.out.println("Suma de positivos: " + sumaPositivos);
+        System.out.println("Promedio de postivos: " + (sumaPositivos/conteopositivos));
+        System.out.println("Conteo ceros: " + conteoCeros);

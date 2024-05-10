@@ -1,0 +1,24 @@
+import java.util.Scanner;
+/*Leer números hasta que se introduzca un 0. Para cada uno indicar si es par o impar.*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int numero = 1;
+
+        while(numero != 0) {
+            System.out.println("Ingrese un numero o '0 para salir': ");
+            numero = entrada.nextInt();
+
+            if (numero != 0) {
+                if(numero % 2 == 0) {
+                    System.out.println("Este numero es par: "+numero);
+                }
+                else {
+                    System.out.println("Este numero es inpar: "+numero);
+                }
+            }
+        }
+
+    }
+}

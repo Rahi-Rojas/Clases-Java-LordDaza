@@ -1,0 +1,34 @@
+import java.util.Scanner;
+/*Crear un Programa que simule un juego de adivinar un numero, para ello el
+usuario tendra 5 intentos en cada ingresodel usuario debe mostrar si el numero
+es mayor o menor al numero aleatorio*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int intentos = 1;
+        boolean acierto = false;
+        int numero;
+        int aleatorio = (int) (Math.random()*50)+1;
+        System.out.println(aleatorio);
+
+        while (intentos <= 5 && !acierto) {
+            System.out.println("Adivina el numero entre el rango de 1-50: ");
+            numero= entrada.nextInt();
+
+            if (numero == aleatorio){
+                System.out.println("Ganaste!🥵");
+                acierto = true;
+            }
+            else if (numero < aleatorio) {
+                System.out.println("El "+numero+ " es menor al numero aletorio");
+                intentos++;
+            }
+            else {
+                System.out.println("El "+numero+ " es mayor al numero aletorio");
+                intentos++;
+            }
+
+        }
+    }
+}

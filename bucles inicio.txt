@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+/*Crear un programa que identifique vocales o que por defecto nos diga que esto es un
+* consonante*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int numero = 10;
+
+        while(numero >=0) {
+            System.out.println(numero);
+            numero--;
+        }
+    }
+}

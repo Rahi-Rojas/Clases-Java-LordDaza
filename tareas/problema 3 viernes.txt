@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+/*Hacer un menu que nos permita ver si un numero es par o no, ver si un numero es mayor o no, ver si un numero es diferente del otro o no*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada=new Scanner(System.in);
+        
+        int numerouno;
+        int numerodos;
+        
+        System.out.println("\t...:::Menu:::...");
+        System.out.println("1. Ver si un numero es par o no");
+        System.out.println("2. Ver si un numero es mayor o no");
+        System.out.println("3. ver si un numero es diferente del otro o no");
+        System.out.println("4. Salir");
+        
+        System.out.println("********************");
+        //Falta asignarle al switch el atributo principal el "Scanner esta por poner nada mas"
+        switch(Scanner){
+            case 1:
+                System.out.println("Ingrese el numero: ");
+                numerouno=entrada.nextInt();
+                if (numerouno %2==0){
+                    System.out.println("Es un numero par!");
+                } 
+                else {
+                    System.out.println("Es un numero inpar!");
+                }
+                break;
+            case 2:
+                System.out.println("Ingrese el primer numero: ");
+                numerouno=entrada.nextInt();
+                System.out.println("Ingrese el segundo numero: ");
+                numerodos=entrada.nextInt();
+                
+                if (numerouno>numerodos) {
+                System.out.println("El numero mayor es: "+numerouno);
+                }
+                else {
+                System.out.println("El numero mayor es: "+numerodos);
+                }
+                break;
+            case 3:
+                System.out.print("Ingrese el primer número: ");
+                numerouno = scanner.nextInt();
+                System.out.print("Ingrese el segundo número: ");
+                numerodos = scanner.nextInt();
+
+                if (numerouno != numerodos) {
+                System.out.println("Los números son diferentes.");
+                } 
+                else {
+                System.out.println("Los números son iguales.");
+                }
+                break;
+                default: 
+                System.out.println("Error al Ingreso de tu opcion");
+                break;  
+                
+    }
+}

@@ -1,0 +1,24 @@
+/todo si el dato que yo ingreso es igual al dato que hay dentro del arreglo imprime ese dato/
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Ingrese numero: ");
+            array[i] = entrada.nextInt();
+        }
+
+        System.out.println("Ingrese el numero a buscar: ");
+        int numeroBuscar = entrada.nextInt();
+        boolean encontrado = false;
+        int posicion = 0;
+        for (int i = 0; i < array.length && !encontrado; i++) {
+            if (numeroBuscar == array[i]){
+                encontrado = true;
+                posicion = i;
+            }
+        }
+
+        if (encontrado){
+            System.out.println("El fue encontrado en la posicion: " + posicion);
+        }
+        else {
+            System.out.println("No fue encontrado");
+        }

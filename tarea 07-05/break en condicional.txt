@@ -1,0 +1,15 @@
+import java.util.Scanner;
+/*Mostrar todos los numeros del 1 al 100, pero saltandose de 5 en 5*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        for (int numeroCambiante = 1;numeroCambiante  <= 10; numeroCambiante++){
+            if (numeroCambiante % 2 == 0){
+                System.out.print("\npar: " + numeroCambiante);
+                break;
+            }
+        }
+
+    }
+}

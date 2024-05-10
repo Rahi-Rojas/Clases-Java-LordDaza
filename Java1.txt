@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        int Numero=2;
+        String Nombre="Carlos";
+        float decimal=2.5f;
+        boolean acierto=false;
+
+        int numero1;
+        String nombres;
+        float decimales;
+
+        Scanner entrada=new Scanner(System.in);
+        /*System.out.println("Ingrese el numero: ");
+        numero1=entrada.nextInt();
+        System.out.println("El numero que pusiste es: "+numero1);
+        System.out.println("Ahi esta toda la Data!🥵");*/
+
+        float num1;
+        float num2;
+
+        System.out.println("Ingresa el primer Dato: ");
+        num1=entrada.nextFloat();
+        System.out.println("Ingresa el segundo Dato: ");
+        num2=entrada.nextFloat();
+        float suma= num1 % num2;
+        System.out.println("La suma de los 2 datos es: "+suma);
+
+    }
+}

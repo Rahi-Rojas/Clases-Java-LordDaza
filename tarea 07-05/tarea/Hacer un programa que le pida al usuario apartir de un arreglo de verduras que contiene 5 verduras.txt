@@ -1,0 +1,20 @@
+import java.util.Scanner;
+/*Hacer un programa que le pida al usuario apartir de un arreglo de verduras que contiene
+* 5 verduras cual es su elección a elegir*/
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+
+        String [] verduras = {"papa", "camote", "yuca", "cebolla", "vainita"};
+
+         for (int indice = 0;indice < verduras.length;indice++){
+             System.out.println(indice+verduras[indice]);
+         }
+        System.out.println("Ingrese la opcion de verdura: ");
+        int opcion = entrada.nextInt();
+        System.out.println(verduras[opcion]);
+        
+    }
+}

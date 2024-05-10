@@ -1,0 +1,30 @@
+import java.util.Scanner;
+/*crear un programa que permita ingresar muchos numeros y decirme dentro de ese rango de
+* numeros ingresados cuantos son pares e impares, el programa termina cuando se ingresa un 0*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        boolean acierto = false;
+        int numero;
+        int pares = 0;
+        int inpares = 0;
+
+        while (!acierto) {
+            System.out.println("Ingresa el Numero: ");
+            numero=entrada.nextInt();
+
+            if (numero == 0) {
+                System.out.println("Este total de numeros son inpares: "+inpares);
+                System.out.println("Este total de numeros son pares: "+pares);
+                acierto = true;
+            }
+            else if (numero % 2 == 0) {
+                pares++;
+            }
+            else {
+                inpares++;
+            }
+        }
+    }
+}

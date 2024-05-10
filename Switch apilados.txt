@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+/*Crear un programa que nos diga los dias laborales de la semana para ello deberas implementar un menu con los dias de la semana
+y decir si es laboral o no teniendo en cuenta que sabado y domingo no se trabaja naturalmente*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada=new Scanner(System.in);
+        
+        int dia;
+        
+        System.out.println("\t...:::Menu:::...");
+        System.out.println("1. Lunes");
+        System.out.println("2. Martes");
+        System.out.println("3. Miercoles");
+        System.out.println("4. Jueves");
+        System.out.println("5. Viernes");
+        System.out.println("6. Sabado");
+        System.out.println("7. Domingo");
+        System.out.println("********************");
+        
+        System.out.println("Ingrese su opción: ");
+        dia=entrada.nextInt();
+        switch(dia){
+            
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Es un dia laboral");
+                break;
+            case 6:
+            case 7:
+                System.out.println("No es un dia laboral");
+                break;
+            default: 
+                System.out.println("Error al Ingreso de tu opcion");
+                break;  
+        }
+    }
+}

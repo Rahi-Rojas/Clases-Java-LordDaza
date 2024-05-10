@@ -1,0 +1,29 @@
+import java.util.Scanner;
+/*Pedir al usuario que ingrese 15 edades. Mostrar el promedio de edad
+ de los menores de 18 años y cuántos tienen 18 años o más.*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int [] edades = new int [5];
+        int menores = 0;
+        int mayores = 0;
+
+        //Metodo de almacenador
+        for (int i = 0; i < edades.length; i++) {
+            System.out.println("Ingrese la Edad: ");
+            edades[i] = entrada.nextInt();
+        }
+
+        for (int i = 0; i < edades.length; i++) {
+            if (edades[i] < 18 && edades[i] >= 1) {
+                menores++;
+            }
+            else if (edades[i] < 105) {
+                mayores++;
+            }
+        }
+        System.out.println("La cantidad de personas Mayores son: "+mayores);
+        System.out.println("La cantidad de personas Menores son: "+menores);
+    }
+}

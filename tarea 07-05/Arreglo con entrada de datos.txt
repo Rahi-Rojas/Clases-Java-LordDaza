@@ -1,0 +1,21 @@
+Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Cuantos alumnos desea ingresar: ");
+        int numAlumnos = entrada.nextInt();
+
+        String [] alumnos = new String [numAlumnos];//Decirle a java el tamaño del array
+
+        for (int indice = 0;indice < alumnos.length;indice++){
+
+           System.out.println((indice + 1) + " Ingrese el nombre del alumno: ");
+           alumnos[indice] = entrada.next();
+        } 
+
+        /for (String iterador : alumnos){
+           System.out.println("Alumno: " + iterador);
+           System.out.println();
+        }/
+        System.out.println("Mostrando datos: ");
+        for(int iterador = 0; iterador < alumnos.length; iterador++){
+           System.out.println("Alumno: " + alumnos[iterador]);
+        }

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada=new Scanner(System.in);
+
+        int suma;
+
+        System.out.println("Ingrese el numero: ");
+        suma=entrada.nextInt();
+        if (suma>=1 && suma<=10) {
+            System.out.println("Correcto!!");
+        } else {
+            System.out.println("Este numero no esta permite");
+        }
+    }
+}

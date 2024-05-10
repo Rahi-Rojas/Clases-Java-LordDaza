@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+	String [] frutas = {"Manzana", "Pera", "Naranja"};
+
+        for (int indice = 0; indice < frutas.length;indice++){
+           System.out.println(frutas[indice]);
+        } 
+
+        System.out.println(frutas[2]);
+
+    }
+}

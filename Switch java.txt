@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+/*Hacer un programa que nos diga si somos de edad o no*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada=new Scanner(System.in);
+        
+        int op;
+        
+        System.out.println("\t...:::Menu:::...");
+        System.out.println("1. Saludar");
+        System.out.println("2. Buenos Dias");
+        System.out.println("3. Buenas Tardes");
+        System.out.println("4. Salir");
+        System.out.println("********************");
+        
+        System.out.println("Ingrese su opción: ");
+        op=entrada.nextInt();
+        switch(op){
+            
+            case 1:
+                System.out.println("Saludo de la opcion 1");
+                break;
+            case 2:
+                System.out.println("Buenos Dias");
+                break;
+            case 3:
+                System.out.println("Buenas Tardes");
+                break;
+            case 4:
+                System.out.println("Salir!");
+                break;
+                
+            default: 
+            
+                System.out.println("Error al Ingreso de tu opcion");
+                break;  
+            
+        }
+    }
+}

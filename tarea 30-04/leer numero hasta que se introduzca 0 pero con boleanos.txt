@@ -1,0 +1,21 @@
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        boolean bandera = false; //todo me sirve para saber si ingrese el numero 0
+        int numero; //todo este el numero que el usuario ingresara
+
+        while (!bandera) {
+            System.out.println("Ingresa un numero : ");
+            numero = sc.nextInt();
+
+            if (numero == 0) {
+                bandera = true;
+            } else if (numero % 2 == 0) {
+                System.out.println("El numero: " + numero + " es par");
+            }
+            else {
+                System.out.println("El numero: " + numero + " es impar");
+            }
+        }
+
+    }

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+/*Hacer un programa que calcule el promedio de N notas*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+          int nota; 
+        int notaTotal = 0;
+        System.out.println("Ingrese el numero de notas: ");
+        int numNotas = sc.nextInt();//3
+
+        for (int i = 0;i < numNotas;i++){
+           System.out.println("Ingrese la nota " + (i + 1) + ": ");
+           nota = sc.nextInt();
+           notaTotal += nota;
+        } 
+
+        int prom = notaTotal / numNotas;
+        System.out.println("Prom: " + prom);
+    }
+}

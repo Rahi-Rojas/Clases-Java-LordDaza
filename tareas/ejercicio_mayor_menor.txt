@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada=new Scanner(System.in);
+
+        float numero1;
+        float numero2;
+
+        System.out.println("Ingrese el primer numero: ");
+        numero1=entrada.nextFloat();
+        System.out.println("Ingrese el segundo numero: ");
+        numero2=entrada.nextFloat();
+        if (numero1>numero2) {
+            System.out.println("El numero mayor es: "+numero1);
+        }
+        else {
+            System.out.println("El numero mayor es: "+numero2);
+        }
+    }
+}

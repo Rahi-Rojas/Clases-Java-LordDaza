@@ -1,0 +1,27 @@
+import java.util.Scanner;
+/*Poner un numero hasta que se teclee un 0 y mostrar la suma de todos los numeros
+introducidos con boleanos*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        boolean acierto = false;
+        int numero;
+        int suma = 0;
+
+        while (!acierto) {
+            System.out.println("Ingresa un numero🥵: ");
+            numero = entrada.nextInt();
+
+            if (numero != 0) {
+                suma += numero;
+
+            }
+            else {
+                System.out.println("La suma de los numero en total es: "+suma);
+                acierto = true;
+
+            }
+        }
+    }
+}

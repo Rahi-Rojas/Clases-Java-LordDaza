@@ -1,0 +1,21 @@
+import java.util.Scanner;
+/*Pedir números hasta que se teclee un 0, mostrar la suma de todos los números introducidos*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int numero;
+        int suma = 0;
+
+        System.out.println("Ingrese un numero o 0 para salir: ");
+        numero= entrada.nextInt();
+
+        while(numero != 0) {
+            suma += numero;
+
+            System.out.println("Ingrese otro numero o 0 apra salir: ");
+            numero=entrada.nextInt();
+        }
+        System.out.println("La suma de los numero en total es: "+suma);
+    }
+}

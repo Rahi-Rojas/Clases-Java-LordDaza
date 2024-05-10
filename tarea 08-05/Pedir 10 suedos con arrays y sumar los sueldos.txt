@@ -1,0 +1,31 @@
+import java.util.Scanner;
+/* Pedir 10 sueldos. Mostrar su suma y cuantos hay mayores de $1000*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        double sueldoMayor = 0;
+        double sueldoMenor = 0;
+        double suma = 0;
+        double [] sueldos = new double[5];
+
+        //Metodo de almacenador
+        for (int i = 0; i < sueldos.length; i++) {
+            System.out.println("Ingrese el Sueldo: ");
+            sueldos[i] = entrada.nextDouble();
+            suma+= sueldos[i];
+        }
+        //Sueldo Mayor
+        for (int i = 0; i < sueldos.length; i++) {
+            if (sueldos[i] > 1000){
+                sueldoMayor++;
+            }
+            else if (sueldos[i] <=1000) {
+                sueldoMenor++;
+            }
+        }
+        System.out.println("El total de sueldos mayores a 1000 son: "+sueldoMayor);
+        System.out.println("El total de sueldos menores o iguales a 1000 son: "+sueldoMenor);
+        System.out.println("La suma de los sueldos es: "+suma);
+    }
+}

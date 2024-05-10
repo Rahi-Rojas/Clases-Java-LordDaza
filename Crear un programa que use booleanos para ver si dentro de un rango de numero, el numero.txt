@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+/*Crear un programa que use booleanos para ver si dentro de un rango de numero, el numero
+* es par*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int inicio = 1; //Iterador
+        int ultimo = 10;
+        boolean acierto = false;
+
+        while (inicio <= ultimo && acierto == false) {
+            if (inicio % 2 ==0) {
+                System.out.println(inicio);
+                acierto = true;
+            }
+            inicio++;
+        }
+    }
+}

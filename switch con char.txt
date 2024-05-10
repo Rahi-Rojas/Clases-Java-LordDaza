@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+/*Crear un programa que identifique vocales o que por defecto nos diga que esto es un
+* consonante*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("\t...:::Menu:::...");
+        System.out.println("Ingresa una Letra: ");
+
+
+        char opcion = entrada.next().charAt(0);
+
+        switch (opcion) {
+            case 'A', 'a':
+            case 'E', 'e':
+            case 'I', 'i':
+            case 'O', 'o':
+            case 'U', 'u':
+                System.out.println("Es una vocal");
+            break;
+            default:
+                System.out.println("Es una consonante");
+                break;
+        }
+    }
+}

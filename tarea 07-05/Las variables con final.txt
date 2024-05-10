@@ -1,0 +1,14 @@
+import java.util.Scanner;
+/*Mostrar todos los numeros del 1 al 100, pero saltandose de 5 en 5*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int horassuenno = 8;
+        int suenno = 10;
+        if (suenno > horassuenno) {
+            System.out.println("usted duerme demasiado");
+        }
+        
+    }
+}

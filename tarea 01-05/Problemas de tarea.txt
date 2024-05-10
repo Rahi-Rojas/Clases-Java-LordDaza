@@ -1,0 +1,5 @@
+/*Crear un Programa que simule un juego de adivinar un numero, para ello el usuario tendra 5 intentos en cada ingreso
+del usuario debe mostrar si el numero es mayor o menor al numero aleatorio.*/
+
+/*Poner un numero hasta que se teclee un 0 y mostrar la suma de todos los numeros introducidos con boleanos*/
+
